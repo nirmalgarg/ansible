@@ -12,7 +12,7 @@ Our base Packer image (`ubuntu-2204-gold`) includes:
 
 To increase logical volume size or create & mount new partitions from free disk space, add the following variables in `terragrunt.hcl`:  
 
-### Disk Resize VARIABLES
+#Disk Resize VARIABLES
 
 ```
 disk_resize = "true"
@@ -34,7 +34,7 @@ disk_resize_path = [
   }
 ]
 ```
-### Variable Explanation  
+#Variable Explanation  
 
 - **`disk_resize`** – Enables disk resizing (`true` / `false`).  
 - **`lv_check`** – Runs `disk_resize_lv.sh` if `true`.  
